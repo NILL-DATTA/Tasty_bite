@@ -51,14 +51,14 @@ export default function LoginPage() {
             <img
               src="/images/gg.png"
               alt="Logo"
-              className="h-40 md:h-52 w-auto object-contain"
+              className="h-16 md:h-20 w-auto object-contain"
             />
           </div>
 
           {/* Header */}
-          <div className="text-center -mt-2 mb-8">
+          <div className="text-center mt-6 mb-10">
             <h1 className="text-3xl md:text-4xl font-bold text-green-900">
-              Welcome Back 👋
+              Welcome Back
             </h1>
 
             <p className="mt-2 text-gray-600">
@@ -271,7 +271,7 @@ export default function LoginPage() {
             <p className="text-gray-600 text-sm">
               Don't have an account?{" "}
               <Link
-                href="/register"
+                href="/auth/signup"
                 className="font-bold text-green-700 hover:text-green-900"
               >
                 Register Now
