@@ -23,19 +23,47 @@ export default function Navbar() {
 
                     {/* Desktop Menu */}
                     <nav className="hidden lg:flex items-center gap-8">
-                        <Link href="/">Home</Link>
-                        <Link href="/food_section/foodlist">Meals</Link>
-                        <Link href="/subscription">Subscription</Link>
-                        <Link href="/about">About</Link>
-                        <Link href="/contact">Contact</Link>
+                        <Link
+                            href="/"
+                            className="text-black font-medium hover:text-green-700 transition-colors"
+                        >
+                            Home
+                        </Link>
+
+                        <Link
+                            href="/food_section/foodlist"
+                            className="text-black font-medium hover:text-green-700 transition-colors"
+                        >
+                            Meals
+                        </Link>
+
+                        <Link
+                            href="/subscription"
+                            className="text-black font-medium hover:text-green-700 transition-colors"
+                        >
+                            Subscription
+                        </Link>
+
+                        <Link
+                            href="/about"
+                            className="text-black font-medium hover:text-green-700 transition-colors"
+                        >
+                            About
+                        </Link>
+
+                        <Link
+                            href="/contact"
+                            className="text-black font-medium hover:text-green-700 transition-colors"
+                        >
+                            Contact
+                        </Link>
                     </nav>
 
                     {/* Right Side */}
                     <div className="flex items-center gap-4">
-
                         <Link
                             href="/auth/signin"
-                            className="hidden lg:block px-6 py-3 rounded-xl bg-green-700 text-white font-semibold"
+                            className="hidden lg:block px-6 py-3 rounded-xl bg-green-700 text-white font-semibold hover:bg-green-800 transition-colors"
                         >
                             Login
                         </Link>
@@ -43,7 +71,7 @@ export default function Navbar() {
                         {/* Mobile Menu Button */}
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="lg:hidden"
+                            className="lg:hidden text-black"
                         >
                             {isOpen ? <X size={28} /> : <Menu size={28} />}
                         </button>
@@ -52,14 +80,19 @@ export default function Navbar() {
 
                 {/* Mobile Menu */}
                 {isOpen && (
-                    <div className="lg:hidden py-4 border-t">
+                    <div className="lg:hidden py-4 border-t bg-white">
                         <nav className="flex flex-col space-y-4">
-                            <Link href="/" onClick={() => setIsOpen(false)}>
+                            <Link
+                                href="/"
+                                className="text-black font-medium hover:text-green-700"
+                                onClick={() => setIsOpen(false)}
+                            >
                                 Home
                             </Link>
 
                             <Link
                                 href="/food_section/foodlist"
+                                className="text-black font-medium hover:text-green-700"
                                 onClick={() => setIsOpen(false)}
                             >
                                 Meals
@@ -67,6 +100,7 @@ export default function Navbar() {
 
                             <Link
                                 href="/subscription"
+                                className="text-black font-medium hover:text-green-700"
                                 onClick={() => setIsOpen(false)}
                             >
                                 Subscription
@@ -74,6 +108,7 @@ export default function Navbar() {
 
                             <Link
                                 href="/about"
+                                className="text-black font-medium hover:text-green-700"
                                 onClick={() => setIsOpen(false)}
                             >
                                 About
@@ -81,6 +116,7 @@ export default function Navbar() {
 
                             <Link
                                 href="/contact"
+                                className="text-black font-medium hover:text-green-700"
                                 onClick={() => setIsOpen(false)}
                             >
                                 Contact
@@ -89,7 +125,7 @@ export default function Navbar() {
                             <Link
                                 href="/auth/signin"
                                 onClick={() => setIsOpen(false)}
-                                className="bg-green-700 text-white px-4 py-2 rounded-lg text-center"
+                                className="bg-green-700 text-white px-4 py-2 rounded-lg text-center font-medium hover:bg-green-800 transition-colors"
                             >
                                 Login
                             </Link>

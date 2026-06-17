@@ -61,7 +61,7 @@ export default function MealsPage() {
                         <input
                             type="text"
                             placeholder="Search your food..."
-                            className="w-full h-14 pl-12 pr-4 rounded-xl border bg-white outline-none"
+                            className="w-full h-14 pl-12 pr-4  placeholder-black text-black rounded-xl border bg-white outline-none"
                         />
                     </div>
 
@@ -74,7 +74,7 @@ export default function MealsPage() {
 
                     {/* Sidebar */}
                     <aside className="bg-white rounded-2xl p-6 h-fit shadow-sm">
-                        <h3 className="font-bold text-xl mb-5">
+                        <h3 className="font-bold  text-black text-xl mb-5">
                             Categories
                         </h3>
 
@@ -82,7 +82,7 @@ export default function MealsPage() {
                             {categories.map((cat) => (
                                 <button
                                     key={cat}
-                                    className={`w-full text-left px-4 py-3 rounded-xl transition ${cat === "All"
+                                    className={`w-full text-left px-4 py-3 text-black rounded-xl transition ${cat === "All"
                                         ? "bg-green-700 text-white"
                                         : "bg-gray-100 hover:bg-green-50"
                                         }`}
@@ -109,7 +109,7 @@ export default function MealsPage() {
                                     />
 
                                     <div className="flex-1">
-                                        <h3 className="text-2xl font-bold">
+                                        <h3 className="text-2xl text-black font-bold">
                                             {meal.name}
                                         </h3>
 
@@ -138,7 +138,7 @@ export default function MealsPage() {
                     {[1, 2, 3, 4, 5].map((page) => (
                         <button
                             key={page}
-                            className={`w-12 h-12 rounded-full ${page === 1
+                            className={`w-12 h-12 text-black rounded-full ${page === 1
                                 ? "bg-green-700 text-white"
                                 : "bg-white border"
                                 }`}

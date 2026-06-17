@@ -1,11 +1,4 @@
-import {
-  Dumbbell,
-  Leaf,
-  CookingPot,
-  Truck,
-  Heart,
-  Plus,
-} from "lucide-react";
+import { Dumbbell, Leaf, CookingPot, Truck, Heart, Plus } from "lucide-react";
 
 const meals = [
   {
@@ -14,8 +7,7 @@ const meals = [
     protein: "40g Protein",
     calories: "520 Kcal",
     price: "₹149",
-    image:
-      "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
+    image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
   },
   {
     id: 2,
@@ -23,8 +15,7 @@ const meals = [
     protein: "28g Protein",
     calories: "470 Kcal",
     price: "₹139",
-    image:
-      "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500",
+    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500",
   },
   {
     id: 3,
@@ -32,8 +23,7 @@ const meals = [
     protein: "30g Protein",
     calories: "450 Kcal",
     price: "₹129",
-    image:
-      "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500",
+    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500",
   },
   {
     id: 4,
@@ -41,8 +31,7 @@ const meals = [
     protein: "30g Protein",
     calories: "430 Kcal",
     price: "₹119",
-    image:
-      "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500",
+    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500",
   },
 ];
 
@@ -82,9 +71,8 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-6 text-lg text-gray-600 max-w-xl">
-              30g+ Protein Per Meal. Fresh Ingredients.
-              Home Style Cooked Food Delivered Daily
-              To Your Doorstep.
+              30g+ Protein Per Meal. Fresh Ingredients. Home Style Cooked Food
+              Delivered Daily To Your Doorstep.
             </p>
 
             <div className="flex flex-wrap gap-4 mt-8">
@@ -119,15 +107,9 @@ export default function HomePage() {
               const Icon = feature.icon;
 
               return (
-                <div
-                  key={index}
-                  className="text-center"
-                >
+                <div key={index} className="text-center">
                   <div className="w-16 h-16 mx-auto rounded-full bg-green-50 flex items-center justify-center">
-                    <Icon
-                      size={28}
-                      className="text-green-700"
-                    />
+                    <Icon size={28} className="text-green-700" />
                   </div>
 
                   <h3 className="mt-4 font-semibold text-gray-800">
@@ -143,13 +125,9 @@ export default function HomePage() {
       {/* POPULAR MEALS */}
       <section className="max-w-7xl mx-auto px-6 lg:px-10 pb-20">
         <div className="flex justify-between items-center mb-8">
-          <h2 className="text-4xl font-bold text-gray-900">
-            Popular Meals
-          </h2>
+          <h2 className="text-4xl font-bold text-gray-900">Popular Meals</h2>
 
-          <button className="text-green-700 font-semibold">
-            View All
-          </button>
+          <button className="text-green-700 font-semibold">View All</button>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -166,17 +144,12 @@ export default function HomePage() {
                 />
 
                 <button className="absolute top-4 right-4 bg-white rounded-full p-2 shadow">
-                  <Heart
-                    size={18}
-                    className="text-green-700"
-                  />
+                  <Heart size={18} className="text-green-700" />
                 </button>
               </div>
 
               <div className="p-5">
-                <h3 className="font-bold text-lg">
-                  {meal.name}
-                </h3>
+                <h3 className="font-bold text-black text-lg">{meal.name}</h3>
 
                 <p className="text-gray-500 text-sm mt-2">
                   {meal.protein} | {meal.calories}
@@ -197,13 +170,10 @@ export default function HomePage() {
         </div>
       </section>
 
-
-
       <section className="py-20 bg-[#f7fbf7]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="relative overflow-hidden rounded-[40px] bg-gradient-to-r from-green-50 to-green-100 border border-green-200">
             <div className="grid lg:grid-cols-2 items-center">
-
               {/* Left Content */}
               <div className="p-10 lg:p-16">
                 <div className="inline-flex items-center gap-2 bg-green-700 text-white px-4 py-2 rounded-full text-sm font-medium">
@@ -217,8 +187,8 @@ export default function HomePage() {
                 </h2>
 
                 <p className="mt-5 text-lg text-gray-600 max-w-lg">
-                  Get healthy meals delivered daily and save more
-                  with our flexible subscription plans.
+                  Get healthy meals delivered daily and save more with our
+                  flexible subscription plans.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-4">
@@ -238,7 +208,6 @@ export default function HomePage() {
                   src="/images/subs.png"
                   alt="Subscription Meal"
                   className="h-60 md:h-62 w-auto object-contain"
-
                 />
 
                 <div className="absolute top-10 right-10 bg-white rounded-full w-36 h-36 flex flex-col items-center justify-center shadow-xl">
@@ -246,9 +215,7 @@ export default function HomePage() {
                     UP TO
                   </span>
 
-                  <span className="text-5xl font-bold text-green-700">
-                    20%
-                  </span>
+                  <span className="text-5xl font-bold text-green-700">20%</span>
 
                   <span className="text-sm font-semibold text-gray-500">
                     OFF
@@ -260,40 +227,34 @@ export default function HomePage() {
         </div>
       </section>
 
-
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-
           <div className="text-center mb-16">
-            <span className="text-green-700 font-semibold">
-              SIMPLE PROCESS
-            </span>
+            <span className="text-green-700 font-semibold">SIMPLE PROCESS</span>
 
             <h2 className="mt-3 text-4xl lg:text-5xl font-bold text-gray-900">
               How It Works
             </h2>
 
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              Get healthy meals delivered to your doorstep in
-              just a few simple steps.
+              Get healthy meals delivered to your doorstep in just a few simple
+              steps.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-
             {/* Step 1 */}
             <div className="bg-green-50 rounded-3xl p-8 text-center hover:shadow-lg transition">
               <div className="w-20 h-20 mx-auto rounded-full bg-green-700 text-white flex items-center justify-center text-3xl font-bold">
                 1
               </div>
 
-              <h3 className="mt-6 text-2xl font-bold">
+              <h3 className="mt-6 text-2xl  text-black font-bold">
                 Choose Your Meal
               </h3>
 
               <p className="mt-3 text-gray-600">
-                Browse our protein-packed menu and select
-                your favorite meals.
+                Browse our protein-packed menu and select your favorite meals.
               </p>
             </div>
 
@@ -303,13 +264,12 @@ export default function HomePage() {
                 2
               </div>
 
-              <h3 className="mt-6 text-2xl font-bold">
+              <h3 className="mt-6 text-2xl text-black font-bold">
                 Place Your Order
               </h3>
 
               <p className="mt-3 text-gray-600">
-                Order once or subscribe to weekly and monthly
-                meal plans.
+                Order once or subscribe to weekly and monthly meal plans.
               </p>
             </div>
 
@@ -319,50 +279,41 @@ export default function HomePage() {
                 3
               </div>
 
-              <h3 className="mt-6 text-2xl font-bold">
+              <h3 className="mt-6 text-2xl text-black font-bold">
                 Enjoy Healthy Food
               </h3>
 
               <p className="mt-3 text-gray-600">
-                Fresh meals delivered to your doorstep every
-                day.
+                Fresh meals delivered to your doorstep every day.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-
       <section className="py-24 bg-[#f8faf8]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-
           <div className="text-center mb-16">
-            <span className="text-green-700 font-semibold">
-              TESTIMONIALS
-            </span>
+            <span className="text-green-700 font-semibold">TESTIMONIALS</span>
 
             <h2 className="mt-3 text-4xl lg:text-5xl font-bold text-gray-900">
               What Our Customers Say
             </h2>
 
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              Thousands of customers trust us for their daily
-              healthy meal needs.
+              Thousands of customers trust us for their daily healthy meal
+              needs.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
             {/* Testimonial 1 */}
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition">
-              <div className="flex text-yellow-400 text-xl">
-                ★★★★★
-              </div>
+              <div className="flex text-yellow-400 text-xl">★★★★★</div>
 
               <p className="mt-4 text-gray-600">
-                The food quality is amazing. I have been
-                ordering for the last 3 months and every meal
-                is fresh and delicious.
+                The food quality is amazing. I have been ordering for the last 3
+                months and every meal is fresh and delicious.
               </p>
 
               <div className="mt-6 flex items-center gap-4">
@@ -373,26 +324,20 @@ export default function HomePage() {
                 />
 
                 <div>
-                  <h4 className="font-bold">
-                    Rahul Sharma
-                  </h4>
+                  <h4 className="font-bold text-black">Rahul Sharma</h4>
 
-                  <p className="text-sm text-gray-500">
-                    Fitness Enthusiast
-                  </p>
+                  <p className="text-sm text-gray-500">Fitness Enthusiast</p>
                 </div>
               </div>
             </div>
 
             {/* Testimonial 2 */}
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition">
-              <div className="flex text-yellow-400 text-xl">
-                ★★★★★
-              </div>
+              <div className="flex text-yellow-400 text-xl">★★★★★</div>
 
               <p className="mt-4 text-gray-600">
-                Perfect solution for busy professionals. The
-                subscription plan saves me both time and money.
+                Perfect solution for busy professionals. The subscription plan
+                saves me both time and money.
               </p>
 
               <div className="mt-6 flex items-center gap-4">
@@ -403,26 +348,20 @@ export default function HomePage() {
                 />
 
                 <div>
-                  <h4 className="font-bold">
-                    Priya Verma
-                  </h4>
+                  <h4 className="font-bold text-black">Priya Verma</h4>
 
-                  <p className="text-sm text-gray-500">
-                    Software Engineer
-                  </p>
+                  <p className="text-sm text-gray-500">Software Engineer</p>
                 </div>
               </div>
             </div>
 
             {/* Testimonial 3 */}
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition">
-              <div className="flex text-yellow-400 text-xl">
-                ★★★★★
-              </div>
+              <div className="flex text-yellow-400 text-xl">★★★★★</div>
 
               <p className="mt-4 text-gray-600">
-                High protein meals with great taste. Delivery
-                is always on time and packaging is excellent.
+                High protein meals with great taste. Delivery is always on time
+                and packaging is excellent.
               </p>
 
               <div className="mt-6 flex items-center gap-4">
@@ -433,17 +372,12 @@ export default function HomePage() {
                 />
 
                 <div>
-                  <h4 className="font-bold">
-                    Arjun Singh
-                  </h4>
+                  <h4 className="font-bold text-black">Arjun Singh</h4>
 
-                  <p className="text-sm text-gray-500">
-                    Gym Trainer
-                  </p>
+                  <p className="text-sm text-gray-500">Gym Trainer</p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
