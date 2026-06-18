@@ -101,6 +101,7 @@ export default function Navbar() {
                             <Link
                                 href="/subscription"
                                 className="text-black font-medium hover:text-green-700"
+                                href="/food_section/subscription"
                                 onClick={() => setIsOpen(false)}
                             >
                                 Subscription
