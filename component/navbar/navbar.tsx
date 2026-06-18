@@ -37,7 +37,7 @@ export default function Navbar() {
                         </Link>
 
                         <Link
-                            href="/food_section/subscription"
+                            href="/subscription"
                             className="font-medium text-black hover:text-green-700 transition"
                         >
                             Subscription
@@ -102,7 +102,7 @@ export default function Navbar() {
                             </Link>
 
                             <Link
-                                href="/food_section/subscription"
+                                href="/subscription"
                                 onClick={() => setIsOpen(false)}
                                 className="font-medium text-black hover:text-green-700"
                             >
