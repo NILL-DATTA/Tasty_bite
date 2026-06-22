@@ -14,7 +14,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link href="/">
                         <img
-                            src="/images/gg.png"
+                            src="/images/bitenest.png"
                             alt="Logo"
                             className="h-14 w-auto object-contain"
                         />

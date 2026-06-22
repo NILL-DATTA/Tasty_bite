@@ -55,7 +55,7 @@ export default function Footer() {
                     <div className="lg:col-span-1">
                         <Link href="/" className="inline-block">
                             <img
-                                src="/images/gg.png"
+                                src="/images/bitenest.png"
                                 alt="TastyBite Logo"
                                 className="h-14 w-auto object-contain"
                             />

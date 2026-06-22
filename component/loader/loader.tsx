@@ -4,7 +4,7 @@ export default function SplashLoader() {
   return (
     <div className="fixed inset-0 z-[9999] bg-white flex flex-col items-center justify-center">
       <img
-        src="/images/gg.png"
+        src="/images/bitenest.png"
         alt="Tasty Bite"
         className="w-48 mb-6 animate-pulse"
       />

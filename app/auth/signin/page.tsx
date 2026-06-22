@@ -49,7 +49,7 @@ export default function LoginPage() {
           {/* Logo */}
           <div className="flex justify-center">
             <img
-              src="/images/gg.png"
+              src="/images/bitenest.png"
               alt="Logo"
               className="h-16 md:h-20 w-auto object-contain"
             />

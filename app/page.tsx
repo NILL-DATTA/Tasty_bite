@@ -1,4 +1,5 @@
 import { Dumbbell, Leaf, CookingPot, Truck, Heart, Plus } from "lucide-react";
+import Link from "next/link";
 
 const meals = [
   {
@@ -76,13 +77,18 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-wrap gap-4 mt-8">
-              <button className="px-8 py-4 rounded-xl bg-green-700 text-white font-semibold hover:bg-green-800 transition">
-                Order Now
-              </button>
+              <Link href="/food_order">
+                <button className="px-8 py-4 rounded-xl bg-green-700 text-white font-semibold hover:bg-green-800 transition">
 
-              <button className="px-8 py-4 rounded-xl border-2 border-green-700 text-green-700 font-semibold hover:bg-green-50 transition">
-                Subscription Plan
-              </button>
+                  Order Now
+                </button>
+              </Link>
+
+              <Link href="/subscription">
+                <button className="px-8 py-4 rounded-xl border-2 border-green-700 text-green-700 font-semibold hover:bg-green-50 transition">
+                  Subscription Plan
+                </button>
+              </Link>
             </div>
           </div>
 
